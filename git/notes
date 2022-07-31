@@ -6,3 +6,13 @@ git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Crese
 
 # See only the changes
 git lg -p
+
+# Messages pop up in git about:
+hint: Pulling without specifying how to reconcile divergent branches is
+hint: discouraged. You can squelch this message by running one of the following
+hint: commands sometime before your next pull:
+
+This happens because by default, git pull can create a merge commit by doing a git fetch then a git merge. If you specify git pull --ff-only then it will only pull commits that can be laid on top (fast forwarded)
+
+Specify in the git config "git config --global pull.ff only" to set it permanently to FF only.
+
