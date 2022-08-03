@@ -4,3 +4,5 @@ set expandtab
 set autoindent
 set background=dark
 syntax on
+
+au BufRead,BufNewFile *.pp set filetype=ruby
