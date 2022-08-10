@@ -16,3 +16,5 @@ This happens because by default, git pull can create a merge commit by doing a g
 
 Specify in the git config "git config --global pull.ff only" to set it permanently to FF only.
 
+# Set git diff to color always
+git config color.diff always
