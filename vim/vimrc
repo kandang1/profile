@@ -5,8 +5,10 @@ set autoindent
 set background=dark
 syntax on
 
+" automatically set pp files to ruby filetype syntax highlighting
 au BufRead,BufNewFile *.pp set filetype=ruby
 
+" automatically toggle paste mode so no need to use :set paste
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
 
@@ -17,3 +19,8 @@ function! XTermPasteBegin()
   set paste
   return ""
 endfunction
+
+" stop vim from putting comments automatically for new lines
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=0
+" set comment color to green
+hi Comment ctermfg=green
