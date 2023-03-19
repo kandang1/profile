@@ -8,6 +8,9 @@ syntax on
 " automatically set pp files to ruby filetype syntax highlighting
 au BufRead,BufNewFile *.pp set filetype=ruby
 
+" automatically set py files to use pydoc
+autocmd BufNewFile,BufRead *.py set keywordprg=pydoc3
+
 " begin: automatically toggle paste mode so no need to use :set paste
 let &t_SI .= "\<Esc>[?2004h"
 let &t_EI .= "\<Esc>[?2004l"
