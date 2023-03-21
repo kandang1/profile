@@ -4,6 +4,7 @@ set expandtab
 set autoindent
 set background=dark
 syntax on
+set nu rnu
 
 " automatically set pp files to ruby filetype syntax highlighting
 au BufRead,BufNewFile *.pp set filetype=ruby
