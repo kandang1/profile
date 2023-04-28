@@ -3,16 +3,15 @@
 [keybindings]
   new_tab = <Primary>t
   cycle_next = <Primary><Shift>Tab
-  split_horiz = <Primary><Alt>minus
-  split_vert = <Primary><Alt>equal
-  toggle_zoom = <Primary><Shift>x
+  split_horiz = <Primary><Shift>o
+  split_vert = <Primary><Shift>e
+  toggle_zoom = <Primary>x
   next_tab = <Primary>Tab
   prev_tab = <Primary><Shift>Tab
 [profiles]
   [[default]]
     background_color = "#282828"
-    cursor_color = "#aaaaaa"
-    font = Monospace 13
+    font = Monospace 11
     foreground_color = "#ebdbb2"
     use_system_font = False
 [layouts]
