@@ -1,0 +1,3 @@
+To make it so that each display shifts up and down when switching workspaces:
+
+# gsettings set org.gnome.mutter workspaces-only-on-primary false
